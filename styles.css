@@ -74,7 +74,7 @@ header div {
     /* gap: 10px; */
 }
 
-aside {
+.connect-socials-container {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -96,7 +96,7 @@ aside {
     font-size: 24px;
 }
 
-aside span {
+.connect-socials-container span {
     font-size: 22px;
 }
 
@@ -119,7 +119,7 @@ main {
     margin-top: 2rem; 
     /* padding: 0px 100px; */
     /* using to have the hero section take up 'hero' space */
-    height: 65rem;
+    height: 44em;
 }
 
 .hero-continue-teaser {
@@ -430,5 +430,34 @@ footer {
     margin-bottom: .5em;
 }
 
+/* $$$$$$$$ MEDIA QUERIES  $$$$$$$$ */
 
+/* MOBILE sizes smallest 320px, typical 480px */
+
+
+
+
+/* TABLET 768px */
+
+
+
+
+/* LAPTOP 1024px */
+
+/* NAV NEEDS TO HIDE THE CONNECT WITH CONTENT BELOW 1280px */
+@media only screen and (min-width: 1279px) {
+
+}
+
+
+
+/* 
+
+    DESKTOP  >= 1280px 
+    Note: I took a desktop first approach in the design phase so the base styles on the page should cover this breakpoint set
+
+*/
+
+/* min-width, 1280px and up apply these styles */
+@media only screen and (min-width: 1280px) {/* styles remain as is */}
 
