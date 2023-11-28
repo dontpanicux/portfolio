@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'logo-font';
+    src: url('./fonts/Futura\ Extra\ Bold\ Condensed.otf');
+}
+@font-face {
+    font-family: 'futura-med-condensed';
+    src: url('./fonts/Futura\ Medium\ Condensed.otf');
+}
+@font-face {
+    font-family: 'futura-med';
+    src: url('./fonts/Futura\ Medium.otf');
+}
+/* CTA BTN TEXT */
+@font-face {
+    font-family: 'futura-bold';
+    src: url(./fonts/Futura\ Bold.otf);
+}
+
+
+
+html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* padding: 0;
+    box-sizing: border-box; */
+    font-family: 'futura-med';
+}
+
+/* utility classes */
+.flex-container {
+
+/* !!!!!!   NEWSLETTER ONLY RN   !!!!!!!!! */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* &&&&&&&&&&&&&&&& */
+
+header {
+    background-color: #A157FF;
+    font-family: 'logo-font';
+    color: #FFF;
+
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 0;
+
+    /* for aside shenanz */
+    position: relative;
+   
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 5%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.logo {
+    font-size: 100px;
+    height: 100px;
+}
+
+.navbar-links {
+    font-size: 24px;
+}
+
+aside span {
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+    /* default padding override */
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem; 
+    /* padding: 0px 100px; */
+    /* using to have the hero section take up 'hero' space */
+    height: 65rem;
+}
+
+.hero-continue-teaser {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 1rem;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero-icons {
+    font-size: 80px;
+}
+
+.hero p {
+    font-size: 32px;
+}
+
+.hero-emphasis-txt-ux{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.hero-emphasis-txt-eng {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* ######### PROJECT SECTION ######### */
+.projects-scetion {
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder-project-img {
+    width: 100%;
+    height: 35rem;
+    /* height: auto; */
+
+    background-color: #D9D9D9;
+    border: fuchsia 2px dotted;
+
+    margin-bottom: 5rem;
+}
+
+/* ########### UX EDU SECTION ############# */
+
+.mentor-service-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-content: center; */
+    
+    margin-bottom: 10rem;
+
+    text-align: left;
+    /* width: auto; */
+}
+
+.mentor-service-img-bkgd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #323232;
+
+    /* hard sizing for meow */
+    width: 500px;
+    height: 300px;
+}
+
+.mentor-service-title {
+    font-family: 'futura-bold';
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.service-teaser-text {
+    font-family: 'futura-med';
+    font-size: 20px;
+}
+
+.mentor-service-img-bkgd > svg {
+    /* margin: 0 auto; */
+}
+
+
+
+.mentor-service-btn-temp-fix {
+    width: 350px;
+}
+
+.mentor-service-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 35%;
+}
+
+section {
+    text-align: center;
+    /* width: 100%; */
+    /* stopped the width forcing left alignment to container */
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'logo-font';
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.section-subheading {
+    font-family: 'futura-med';
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+
+/* newsletter */
+.newsletter {
+    background-color: #D9D9D9;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+    width: 100%;
+}
+/* STYLE OVERRIDE -- reducing spacing between subheading & newsletter input */
+.newsletter > .section-subheading {
+    margin-bottom: 2em;
+}
+
+/* .newsletter h2 {
+    margin-bottom: 40px;
+} */
+
+.newsletter-input {
+
+    font-family: 'futura-med';
+    font-size: 24px;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+    /* padding: 10px 0 10px 10px; */
+    width: 400px;
+}
+
+.primary-btn {
+    /* outline: none; */
+    border: none;
+    background-color: #A157FF;
+    
+    font-family: 'futura-bold';
+    font-size: 24px;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    padding: 20px 60px;
+}
+
+.design-code-section {
+    background-color: #D9D9D9;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.card {
+    /* border: fuchsia 1px dotted; */
+    width: 450px;
+    height: 320px;
+    margin-bottom: 100px;
+
+    background-color: #FFF;
+    
+    box-shadow: 12px 12px 2px 1px rgba(65, 0, 186, 0.363);
+   
+    /* for icon shenans */
+    position: relative;
+}
+
+.dribbble-shot-img{
+    width: 100%;
+    margin: auto;
+    /* height: 100%; */
+}
+
+.card .dribbble-shot-img {
+    object-fit: cover;
+}
+
+.card-icon {
+    font-size: 32px;
+    color: #000;
+    transform: translate(60%, 40%);
+    /* background-color: #A157FF; */
+}
+
+.icon-background {
+    background-color: #ffe600;
+    
+   
+    /* for icon shenans */
+    position: absolute;
+    right:0;
+    top:0;
+
+    /* let's make a triangle broh */
+    width: 100px; 
+    height: 100px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    /* #### WOULD LIKE A BETTER SHADOW #### */
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.363)
+}
+
+/* FOOTY */
+footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* allows the height to dynamically shift based on the container content */
+    height: auto;
+    background-color: #A157FF;
+
+}
+
+.footer-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-circle-link {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #D9D9D9;
+
+    /* for the font awesome icons */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-circle-link i {
+    font-size: 4rem;
+}
+
+.footer-social-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    gap: 20px;
+}
+
+footer {
+    padding: 2em;
+}
+
+.footer-heading { 
+
+    font-family: 'logo-font';
+    font-size: 100px;
+
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+.footer-text-content {
+    color: #F5EDED;
+    font-family: 'futura-bold';
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.05em;
+
+    margin-top: .25em;
+    margin-bottom: .15em;
+}
+
+.footer-socials-containter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8em;
+    gap: 2rem;
+}
+
+.hhgttg-quote {
+    text-align: center;
+}
+
+.quote-content {
+    display: block;
+    color: #F5EDED;
+    font-family: 'futura-bold';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.05em;
+    margin-bottom: .5em;
+}
+
+
+
