@@ -75,10 +75,12 @@ header div {
 }
 
 .connect-socials-container {
-    display: flex;
+    display: none;
+    
+    /* display: flex;
     flex-direction: column;
     position: absolute;
-    right: 5%;
+    right: 5%; */
 }
 
 .social-links {
@@ -446,7 +448,13 @@ footer {
 
 /* NAV NEEDS TO HIDE THE CONNECT WITH CONTENT BELOW 1280px */
 @media only screen and (min-width: 1279px) {
-
+    /* show connect with me social media container */
+    .connect-socials-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 5%;
+    }
 }
 
 
