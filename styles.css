@@ -117,10 +117,13 @@ main {
 .hero{
     display: flex;
     flex-direction: column;
-    margin-top: 2em; 
+    margin-top: 2em;
+    margin-bottom: 2em; 
     /* padding: 0px 100px; */
     /* using to have the hero section take up 'hero' space */
     height: 40em;
+
+    width: 50%;
 }
 
 .hero-continue-teaser {
@@ -153,7 +156,7 @@ main {
 }
 
 /* ######### PROJECT SECTION ######### */
-.projects-scetion {
+.projects-section {
     display: flex;
     flex-direction: column;
 }
@@ -176,7 +179,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* align-content: center; */
+    align-content: center;
     
     margin-bottom: 10em;
 
@@ -191,20 +194,23 @@ main {
     
     background-color: #323232;
 
-    /* hard sizing for meow */
-    width: 500px;
-    height: 300px;
+    padding: 0 2em;
+    /* width: 30%;  */
+    /* 500px */
+    /* height: 300px; */
 }
 
 .mentor-service-title {
     font-family: 'futura-bold';
     font-size: 2rem; /*  32px */
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .service-teaser-text {
     font-family: 'futura-med';
     font-size: 1.25rem; /*  20px */
+    line-height: 1.6;
 }
 
 /* .mentor-service-img-bkgd > svg {
@@ -214,7 +220,7 @@ main {
 
 
 .mentor-service-btn-temp-fix {
-    width: 350px;
+    width: 13em; /* 350px */
 }
 
 .mentor-service-description {
@@ -269,7 +275,7 @@ section {
     border: none;
     text-align: center;
     /* padding: 10px 0 10px 10px; */
-    width: 400px;
+    width: 16em; /* 400px --> 24px is the base since font-size is set above */
 }
 
 .primary-btn {
@@ -294,12 +300,15 @@ section {
     display: flex;
     gap: 4em;
     justify-content: center;
+    /* border: 5px dotted fuchsia; */
+    margin: 0 auto;
+    width: 75%;
 }
 
 .card {
     /* border: fuchsia 1px dotted; */
-    width: 450px;
-    height: 320px;
+    width: 28.125em; /* 450px */
+    height: 20em; /* 320px */
     margin-bottom: 6.25em; /* 100px */
 
     background-color: #FFF;
@@ -329,16 +338,14 @@ section {
 
 .icon-background {
     background-color: #ffe600;
-    
-   
     /* for icon shenans */
     position: absolute;
     right:0;
     top:0;
 
     /* let's make a triangle broh */
-    width: 100px; 
-    height: 100px;
+    width: 30%; /* 100px */
+    height: 30%; /* 100px */
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
     /* #### WOULD LIKE A BETTER SHADOW #### */
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.363)
@@ -361,8 +368,8 @@ footer {
 }
 
 .social-circle-link {
-    width: 150px;
-    height: 150px;
+    width: 8em; /* 150px --> shifted to 128px */
+    height: 8em; /* 150px --> shifted to 128px */
     border-radius: 100px;
     background-color: #D9D9D9;
 
@@ -380,8 +387,20 @@ footer {
 .footer-social-links-container {
     display: flex;
     flex-wrap: wrap;
+    border: 5px dotted fuchsia;
+    /* 
+        Bc of the design that I want
+        For now, I'm going to change
+        this width along with the viewport media queries
+
+        I think that this could be better done with
+        flex basis & grow which I should evaluate in
+        future iterations
+    */
     width: 660px;
-    gap: 1.25em;/*20px*/
+    
+    /* width: 70%; */
+    gap: 1.25em; /*20px*/
 }
 
 footer {
