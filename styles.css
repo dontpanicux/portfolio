@@ -17,9 +17,8 @@
 }
 
 
-/*???? What does this do & is it necessary? ????*/
-html {
-    margin: 0;
+
+* {
     box-sizing: border-box;
 }
 
@@ -111,7 +110,15 @@ ul {
 main {
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    /* stopped the width forcing left alignment to container */
+    margin: 0 auto;
+
+    border: 5px dotted limegreen;
 }
 
 .hero{
@@ -123,13 +130,14 @@ main {
     /* using to have the hero section take up 'hero' space */
     height: 40em;
 
-    width: 50%;
+    width: 90%;
 }
 
 .hero-continue-teaser {
     margin-top: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* justify-content: space-between; */
     gap: 1em;
 }
@@ -162,7 +170,8 @@ main {
 }
 
 .placeholder-project-img {
-    width: 100%;
+    margin: 0 auto;
+    width: 70%;
     height: 35rem;
     /* height: auto; */
 
@@ -185,6 +194,7 @@ main {
 
     text-align: left;
     /* width: auto; */
+    width: 100%;
 }
 
 .mentor-service-img-bkgd {
@@ -219,9 +229,7 @@ main {
 
 
 
-.mentor-service-btn-temp-fix {
-    width: 13em; /* 350px */
-}
+/* .mentor-service-btn-temp-fix {width: 13em; 350px} */
 
 .mentor-service-description {
     display: flex;
@@ -230,12 +238,7 @@ main {
     width: 35%;
 }
 
-section {
-    text-align: center;
-    /* width: 100%; */
-    /* stopped the width forcing left alignment to container */
-    margin: 0 auto;
-}
+
 
 .section-title {
     font-family: 'logo-font';
@@ -289,6 +292,7 @@ section {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     color: #FFF;
     padding: 1em 1.5em; /* Updated ratio to better match style needs */
+    /* width: 65%; */
 }
 
 .design-code-section {
@@ -319,14 +323,28 @@ section {
     position: relative;
 }
 
-.dribbble-shot-img{
-    width: 100%;
-    margin: auto;
+.dribbble-shot-img {
+    /* width: 100%;
+    margin: auto; */
     /* height: 100%; */
 }
 
 .card .dribbble-shot-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.card-yt-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.card-yt{
+    background: rgb(145,51,228);
+    background: linear-gradient(181deg, rgba(145,51,228,1) 40%, rgba(171,105,253,1) 59%);
 }
 
 .card-icon {
@@ -354,18 +372,22 @@ section {
 /* FOOTY */
 footer { 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* allows the height to dynamically shift based on the container content */
-    height: auto;
+    /* height: auto; */
     background-color: #A157FF;
+    width: 100%;
+
+    border: 5px dotted fuchsia;
 
 }
 
-.footer-content-container {
+/* .footer-content-container {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .social-circle-link {
     width: 8em; /* 150px --> shifted to 128px */
@@ -397,7 +419,7 @@ footer {
         flex basis & grow which I should evaluate in
         future iterations
     */
-    width: 660px;
+    width: 100%; /* 660px */
     
     /* width: 70%; */
     gap: 1.25em; /*20px*/
@@ -412,6 +434,8 @@ footer {
     font-family: 'logo-font';
     font-size: 5.625em; /*  90px */
 
+    margin-top: 0;
+    margin-bottom: 0.25em;
     /* offset-x | offset-y | blur-radius | color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
@@ -420,7 +444,7 @@ footer {
 .footer-text-content {
     color: #F5EDED;
     font-family: 'futura-bold';
-    font-size: 1.25rem; /*  20px */
+    font-size: 1rem; /*  20px */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.05em;
 
@@ -428,17 +452,24 @@ footer {
     margin-bottom: .15em;
 }
 
-.footer-socials-containter {
+.footer-socials-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-left: 8em;
+    /* margin-left: 8em; */
     gap: 2em;
+}
+
+.footer-end-content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items:flex-start; */
 }
 
 .hhgttg-quote {
     text-align: center;
+    margin: 2em 0;
 }
 
 .quote-content {
@@ -452,20 +483,156 @@ footer {
 
 /* $$$$$$$$ MEDIA QUERIES  $$$$$$$$ */
 
+/* 
+    Since I am taking a Desktop-first approach I might consider
+    using the following structure
+
+    * Desktop Styles: these are the default styles and will NOT have a media query
+    * Tablet styles(max-width: 768px): this is read as, 'If a Device's Width is LESS THAN OR EQUAL TO 768px apply styles {...}'
+    * Mobile styles(max-width: 414px): 'If a Device's Width is LESS THAN OR EQUAL TO 414px apply styles {...}'
+    
+    Note: this breakpoints may not be perfect & may need adjustment, but
+    this is a starting point.
+
+*/
+
 /* MOBILE sizes smallest 320px, typical 480px */
+/* @media (min-width: 320px){
+    body {
+        background-color: aquamarine;
+    }
+} */
 
-
+/* Desktop Media Query */
+    /* No Media Query since this is a Desktop-First Approach */
 
 
 /* TABLET 768px */
+/* Reads as: if the Device Width is LESS THAN OR EQUAL TO 768 apply these styles */
+@media only screen and (max-width: 1024px) {
+    /* remove when done */
+    body {background-color: antiquewhite ;}
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+        /* margin-bottom: 2em; */
+        padding: 0px 3rem;
+        height: auto;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-icons {
+        font-size: 2.75rem;
+    }
+
+    .hero-continue-teaser {
+        margin-top: 8.5em;
+    }
+
+    .section-title {
+        font-size: 4rem;
+    }
+
+    .section-subheading {
+        font-size: 1.25em;
+    }
+
+    /* Projects Section */
+    /* Projects Section NTS: will likely want to leverage these into base desktop styles */
+    .placeholder-project-img {
+        width: 80%;
+        /* height is only set bc we don't have content yet */
+        height: 25rem;
+        margin: 0 auto 3em auto;
+    }
+
+    /* Design & Code */
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .card {
+        margin-bottom: 3em;
+    }
+
+    /* card platform indicators */
+    .card-icon {
+        font-size: 1.75rem;
+        color: #000;
+        transform: translate(55%, 40%);
+    }
+
+    .icon-background {
+        background-color: #ffe600;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20%;
+        height: 25%;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.363);
+    }
+
+    /* UX EDU Section */
+
+    .primary-btn {
+        font-size: 1.125rem;
+    }
+
+    .mentor-service-title{
+        font-size: 1.5rem;
+    }
+
+    .mentor-service-description {
+        width: 51%
+    }
+
+    .mentor-service-img-bkgd {
+        width: 40%;
+    }
+
+    /* Newsletter Section */
+
+    .newsletter-input {
+        font-size: 1.125rem;
+    }
+
+    /* Footer */
+    footer {
+        /* flex-direction: column; */
+    }
+
+    .footer-content-container {
+        /* flex-direction: row; */
+
+    }
+}
 
 
 
+/* MOBILE 414px */
+/* Reads as: if the Device Width is LESS THAN OR EQUAL TO 414px apply these styles */
+@media only screen and (max-width: 414px) {
+    /* remove when done */
+    body {background-color: aquamarine;}
+}
 
-/* LAPTOP 1024px */
 
 /* NAV NEEDS TO HIDE THE CONNECT WITH CONTENT BELOW 1280px */
-@media only screen and (min-width: 1279px) {
+@media only screen and (min-width: 1280px) {
     /* show connect with me social media container */
     .connect-socials-container {
         display: flex;
@@ -475,15 +642,4 @@ footer {
     }
 }
 
-
-
-/* 
-
-    DESKTOP  >= 1280px 
-    Note: I took a desktop first approach in the design phase so the base styles on the page should cover this breakpoint set
-
-*/
-
-/* min-width, 1280px and up apply these styles */
-@media only screen and (min-width: 1280px) {/* styles remain as is */}
 
