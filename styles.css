@@ -517,16 +517,9 @@ footer {
     /* No Media Query since this is a Desktop-First Approach */
 
 
-
-
-
-
 /* MOBILE 414px */
 /* Reads as: if the Device Width is LESS THAN OR EQUAL TO 414px apply these styles */
-@media only screen and (max-width: 414px) {
-    /* remove when done */
-    body {background-color: aquamarine;}
-}
+
 
 
 /* NAV NEEDS TO HIDE THE CONNECT WITH CONTENT BELOW 1280px */
@@ -602,7 +595,7 @@ footer {
 /* Reads as: if the Device Width is LESS THAN OR EQUAL TO 768 apply these styles */
 @media only screen and (max-width: 768px) {
     /* remove when done */
-    body {background-color: antiquewhite ;}
+    /* body {background-color: antiquewhite ;} */
 
     .hero {
         display: flex;
@@ -907,7 +900,45 @@ footer {
     .social-circle-link svg {
         width: 2em;
     }
+}
 
+@media only screen and (max-width: 350px){
+    .logo {
+        font-size: 2.25rem;
+    }
+
+    .hero {
+        padding: 0 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    .hero-icons {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.75rem;
+    }
+
+    .section-subheading {
+        font-size: 1rem;
+    }
+
+    .icon-background {
+        width: 20%;
+        height: 20%;
+    }
     
-
+    .card-icon {
+        font-size: 1.5rem;
+        color: #000;
+        transform: translate(50%, 30%);
+    }
 }
