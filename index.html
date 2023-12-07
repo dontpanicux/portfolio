@@ -17,7 +17,7 @@
     <header>
         <div>
             <h1 class="logo">DONT PANIC UX</h1>
-            <i class="fa-solid fa-bars mobile-menu-icon"></i>
+            <i class="fa-solid fa-bars mobile-menu-icon" id="mobile-menu"></i>
             <nav>
                 <ul class="navbar-links">
                     <li>HOME</li>
@@ -45,6 +45,23 @@
             </ul>
         </aside>
     </header>
+    <div id="mobile-nav-modal" class="mobile-nav-modal">
+        
+        <div class="modal-content">
+            <div class="modal-container">
+                <i class="fa-solid fa-xmark close-modal-icon" id="close-modal-icon"></i>
+                <nav class="mobile-nav" id="mobile-nav">
+                    <ul class="mobile-navbar-links">
+                        <li><a class="mobile-nav-link" href="#">HOME</a></li>
+                        <li><a class="mobile-nav-link" href="#">PROJECTS</a></li>
+                        <li><a class="mobile-nav-link" href="#">DESIGN & CODE</a></li>
+                        <li><a class="mobile-nav-link" href="#">WHO AM I?</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </div>
     <main>
         <section class="hero">
             
@@ -259,6 +276,6 @@
             <p class="footer-text-content">Built with HTML, CSS, & JS by Me</p>
         </div>
     </footer>
-    
+    <script src="main.js"></script>
 </body>
 </html>

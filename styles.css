@@ -18,7 +18,7 @@
 
 
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -69,6 +69,12 @@ header div {
 /* mobile menu defaults to hidden */
 .mobile-menu-icon {
     display: none;
+}
+/* mobile menu interactivity */
+.mobile-menu-icon:hover, 
+.mobile-menu-icon:focus {
+    opacity: .75;
+    cursor: pointer;
 }
 
 .navbar-links {
@@ -700,6 +706,67 @@ footer {
     }
 }
 
+/* ##### Mobile Menu Mobile ##### */
+
+/* styles for the modal background */
+.mobile-nav-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* enable scrolling */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* styles for the modal dialog itself */
+.modal-content {
+    margin: 5% auto;
+    background-color: #FFF;
+    width: 95%;
+    /* purple gradient? */
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+    0 7px 20px 0 rgba(0, 0, 0, 0.2);
+   
+}
+.modal-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+.mobile-nav {
+    display: block;
+    /* border: 1px dotted fuchsia; */
+    text-align: center;
+    padding: 2em 0;
+}
+
+.mobile-navbar-links {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5em;
+}
+
+.mobile-nav-link {
+    text-decoration: none;
+    color: #000;
+    font-family: 'logo-font';
+    font-size: 2rem;
+}
+
+.close-modal-icon {
+    align-self: flex-end;
+}
+
+/* ##### END Mobile Menu Mobile ##### */
+
+
 
 /* Collapse Navbar, Small logo, Reduce size of cards (Design & Code), Reduce size of footer links */
 @media only screen and (max-width: 767px) {
@@ -709,10 +776,11 @@ footer {
         display: none;
     }
 
-    /* show mobile menu */
+/* show mobile menu */
     .mobile-menu-icon {
         display: block;
     }
+    
 
     /* reduce logo size */
     .logo {
