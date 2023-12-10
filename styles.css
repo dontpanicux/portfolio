@@ -53,7 +53,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    padding: 2.5em 0; /* 40px 0 */
+    padding: 1em 0; /* 40px 0 */
 
     /* for aside shenanz */
     position: relative;
@@ -136,12 +136,11 @@ section {
 .hero{
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em; 
     /* padding: 0px 100px; */
     /* using to have the hero section take up 'hero' space */
     height: 40em;
-
     width: 90%;
 }
 
@@ -181,16 +180,56 @@ section {
     flex-direction: column;
 }
 
-.placeholder-project-img {
-    margin: 0 auto;
-    width: 70%;
-    height: 35em;
-    /* height: auto; */
+.project-img {
+    /* these are placeholders for now */
+}
 
-    background-color: #D9D9D9;
-    border: fuchsia 2px dotted;
+/* Comments are the UX Edu section equivalents */
+/* .mentor-service-container */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 10em;
+    text-align: left;
+    /* width: auto; */
+    width: 100%;
+}
 
-    margin-bottom: 5em;
+/* .mentor-service-description  */
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 35%;
+}
+
+/* .mentor-service-title */
+.project-title {
+    font-family: 'futura-bold';
+    font-size: 2rem; /*  32px */
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* .service-teaser-text */
+.project-description-text {
+    font-family: 'futura-med';
+    font-size: 1.25rem; /*  20px */
+    line-height: 1.6;
+}
+
+/* selecting first CTA in projects to add margin-top:auto */
+.project-container button:first-of-type {
+    margin-top: auto;
+}
+
+.project-meta-main {
+    display: flex;
+}
+.project-meta-mobile {
+    display: none;
 }
 
 /* ########### UX EDU SECTION ############# */
@@ -596,6 +635,64 @@ footer {
     }
 }
 
+/* Projects Section Media Query @ 1024px */
+@media only screen and (max-width: 1024px) {
+   /* .projects-section {
+    background-color: aquamarine;
+   }  */
+   .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 10em;
+    text-align: left;
+    /* width: auto; */
+    width: 100%;
+    /* gap: 2em; */
+    padding: 2em;
+    }
+
+    .project-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+   .project-img {
+    width: 45%;
+    }
+
+    .mobile-hide-content {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 979px){
+
+    .project-container {
+        flex-direction: column;
+        padding: 0;
+        gap: 2em;
+        margin-bottom: 6em;
+    }
+
+    .project-img,
+    .project-description {
+        width: 90%;
+    }
+
+    /* show - hide content based on viewport */
+    .project-meta-main {
+        display: none;
+    }
+    .project-meta-mobile {
+        display: flex;
+    }
+
+}
 
 /* TABLET 768px */
 /* Reads as: if the Device Width is LESS THAN OR EQUAL TO 768 apply these styles */
@@ -883,9 +980,13 @@ footer {
         font-size: 1.125rem;
     }
 
-    .placeholder-project-img {
+    /* .placeholder-project-img {
         width: 90%;
         height: 15em;
+    } */
+
+    .project-title {
+        font-size: 1.5rem;
     }
 
     /* design & code */
@@ -900,9 +1001,9 @@ footer {
         font-size: 3.55rem;
     }
 
-    .design-code-section p {
+    /* .design-code-section p {
         width: 90%;
-    }
+    } */
 
     .card {
         width: 100%;
