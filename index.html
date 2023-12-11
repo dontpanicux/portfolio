@@ -16,14 +16,22 @@
 <body>
     <header>
         <div>
-            <h1 class="logo">DONT PANIC UX</h1>
+            <h1 class="logo" id="home">DONT PANIC UX</h1>
             <i class="fa-solid fa-bars mobile-menu-icon" id="mobile-menu"></i>
             <nav>
                 <ul class="navbar-links">
-                    <li>HOME</li>
-                    <li>PROJECTS</li>
-                    <li>DESIGN & CODE</li>
-                    <li>WHO AM I?</li>
+                    <li>
+                        <a href="#home" class="nav-link-styles active-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav-link-styles">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#design-code-section" class="nav-link-styles">DESIGN & CODE</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/dontpanicux/" target="_blank" class="nav-link-styles who-am-i-link"><span>WHO AM I?</span></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -31,16 +39,16 @@
             <span>CONNECT WITH ME</span>
             <ul class="social-links">
                 <li>
-                    <i class="fa-brands fa-dribbble"></i>
+                    <a href="https://dribbble.com/dontpanicUX" target="_blank" class="social-link-header"><i class="fa-brands fa-dribbble"></i></a>
                 </li>
                 <li>
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/dontpanicux/" target="_blank" class="social-link-header"><i class="fa-brands fa-github"></i></a>
                 </li>
                 <li>
-                    <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/@dontpanicux" target="_blank" class="social-link-header"><i class="fa-brands fa-youtube"></i></a>
                 </li>
                 <li>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/dontpanicux/" target="_blank" class="social-link-header"><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
             </ul>
         </aside>
@@ -90,13 +98,13 @@
 
         </section>
         <section class="projects-section">
-            <h2 class="section-title">PROJECTS</h2>
+            <h2 class="section-title" id="projects">PROJECTS</h2>
              <p class="section-subheading">
                 Projects that demonstrate my Problem Solving, Products Design Process & Frontend Dev skills.
              </p>
              
              <!-- ONNIT PROJECT  -->
-             <div class="project-container">
+             <!-- <div class="project-container">
                 
                 <img class="project-img" src="./assets/images/img-placeholder-gray.png" alt="placeholder image">
 
@@ -110,10 +118,10 @@
                     <p class="project-description-text">
                         Onnit Fitness Companion is Progressive Web App that I’m currently designing & building to help users track their Onnit Online workouts. 
                     </p>
-                    <button class="primary-btn mentor-service-btn-temp-fix">LEARN MORE</button>
+                    <a class="primary-btn mentor-service-btn-temp-fix" href="mailto:blake@dontpanicux.com?Subject=Tell%20me%20more%20about%20Onnit%20Fitness%20Companion" target="_blank">CONTACT ME<i class="fa-regular fa-envelope hover-icon-state"></i></a>
                 </div>
 
-            </div>
+            </div> -->
             <!-- ONNIT PROJECT END -->
             
             <!-- META main -->
@@ -131,15 +139,15 @@
                     <p class="project-description-text">
                         Interested in learning more? Please Contact Me 
                     </p>
-                    <button class="primary-btn mentor-service-btn-temp-fix">CONTACT ME</button>
+                    <a class="primary-btn mentor-service-btn-temp-fix" href="mailto:blake@dontpanicux.com?Subject=Tell%20me%20more%20about%20your%work%20at%20Meta" target="_blank">CONTACT ME<i class="fa-regular fa-envelope hover-icon-state"></i></a>
                 </div>
-                <img class="project-img" src="./assets/images/img-placeholder-gray.png" alt="placeholder image">
+                <img class="project-img" src="./assets/images/meta-logo-img 600x450px.png" alt="placeholder image">
             </div>
 
             <!-- META mobile -->
             <div class="project-container project-meta-mobile">
                 
-                <img class="project-img" src="./assets/images/img-placeholder-gray.png" alt="placeholder image">
+                <img class="project-img" src="./assets/images/meta-logo-img 600x450px.png" alt="placeholder image">
                 
                 <div class="project-description">
                     <h3 class="project-title">
@@ -154,7 +162,7 @@
                     <p class="project-description-text">
                         Interested in learning more? Please Contact Me 
                     </p>
-                    <button class="primary-btn mentor-service-btn-temp-fix">CONTACT ME</button>
+                    <a class="primary-btn mentor-service-btn-temp-fix" href="mailto:blake@dontpanicux.com?Subject=Tell%20me%20more%20about%20your%work%20at%20Meta" target="_blank">CONTACT ME<i class="fa-regular fa-envelope hover-icon-state"></i></a>
                 </div>
             </div>
             <!-- META mobile END -->
@@ -177,7 +185,7 @@
                     <p class="project-description-text">
                         Interested in learning more? Please Contact Me
                     </p>
-                    <button class="primary-btn mentor-service-btn-temp-fix">CONTACT ME</button>
+                    <a class="primary-btn mentor-service-btn-temp-fix" href="mailto:blake@dontpanicux.com?Subject=Tell%20me%20more%20about%20your%work%20at%20PSE" target="_blank">CONTACT ME<i class="fa-regular fa-envelope hover-icon-state"></i></a>
                 </div>
             </div>
             <!-- PSE PROJECTS END -->
@@ -185,14 +193,16 @@
              <!-- <div class="placeholder-project-img"></div>
              <div class="placeholder-project-img"></div> -->
         </section>
-        <section class="design-code-section">
+        <section class="design-code-section" id="design-code-section">
             <h2 class="section-title">DESIGN & CODE</h2>
             <p class="section-subheading">
                 My most recent fun stuff. Some Design, Some Code, All Stoke.
             </p>
             <div class="card-container">
                 <div class="card">
-                    <img class="dribbble-shot-img" src="./assets/images/utahjazz-dribbbleshot.png" alt="">
+                    <a href="https://dribbble.com/shots/22997351-Hero-Explorations-Utah-Jazz" target="_blank">
+                        <img class="dribbble-shot-img" src="./assets/images/utahjazz-dribbbleshot.png" alt="utah jazz landing page design featuring Jordan Clarkson">
+                    </a>
                     <div class="icon-background">
                         <i class="fa-brands fa-dribbble card-icon"></i>
                     </div>
@@ -202,11 +212,14 @@
                     <div class="icon-background">
                         <i class="fa-brands fa-codepen card-icon"></i>
                     </div>
-                    <p class="codepen" data-height="320px" data-default-tab="result" data-slug-hash="oNmdYKy" data-user="dontpanicux" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/dontpanicux/pen/oNmdYKy">
-                        Gorgeous animated gradient borders using only CSS</a> by Blake (<a href="https://codepen.io/dontpanicux">@dontpanicux</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
+                    
+                    <a href="https://codepen.io/dontpanicux/pen/oNmdYKy" target="_blank">
+                        <p class="codepen" data-height="320px" data-default-tab="result" data-slug-hash="oNmdYKy" data-user="dontpanicux" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/dontpanicux/pen/oNmdYKy">
+                            Gorgeous animated gradient borders using only CSS</a> by Blake (<a href="https://codepen.io/dontpanicux">@dontpanicux</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                    </a>
                     <!-- codepen script -->
                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                 </div>
@@ -253,7 +266,7 @@
                         <p class="service-teaser-text">
                             You can book a 1:1 Mentor Session with me on APDList where we can chat about UX careers, help you prep for an interview, or jam on a problem you’re solving. 
                         </p>
-                        <button class="primary-btn mentor-service-btn-temp-fix">BOOK ON ADPList</button>
+                        <a class="primary-btn mentor-service-btn-temp-fix" href="https://adplist.org/mentors/blake-arnsdorff" target="_blank">BOOK ON ADPList</a>
                     </div>
                 </div>
                 <!-- DesignLab main -->
@@ -265,7 +278,7 @@
                         <p class="service-teaser-text">
                             Checkout my profile on DesignLab where I mentor people transitioning into UX Design, Research, & UI Design. You can also reach out to me there to learn more about their courses & how we can work together. 
                         </p>
-                        <button class="primary-btn mentor-service-btn-temp-fix">VIEW MY PROFILE</button>
+                        <a class="primary-btn mentor-service-btn-temp-fix" href="https://designlab.com/Arnsdorff/" target="_blank">VIEW MY PROFILE</a>
                     </div>
                     <div class="mentor-service-img-bkgd">
                         <!-- DL Logo SVG -->
@@ -290,7 +303,7 @@
                         <p class="service-teaser-text">
                             Checkout my profile on DesignLab where I mentor people transitioning into UX Design, Research, & UI Design. You can also reach out to me there to learn more about their courses & how we can work together. 
                         </p>
-                        <button class="primary-btn mentor-service-btn-temp-fix">VIEW MY PROFILE</button>
+                        <a class="primary-btn mentor-service-btn-temp-fix" href="https://designlab.com/Arnsdorff/" target="_blank">VIEW MY PROFILE</a>
                     </div>
                 </div>
         </section>
@@ -301,8 +314,8 @@
                 Weekly Dose of the UX & Dev Content
              </p>
             <div class="flex-container">
-                <input class="newsletter-input" type="text" placeholder="Leave your email, get dope content">
-                <button class="primary-btn" type="submit">FULL SEND</button>
+                <input class="newsletter-input" type="text" placeholder="Leave your email, get dope content" disabled>
+                <button class="primary-btn disabled-btn" type="submit" disabled>COMING 2024</button>
             </div>
         </section>
     </main>

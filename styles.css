@@ -60,6 +60,27 @@ header {
    
 }
 
+.nav-link-styles, 
+.social-link-header {
+    color:#FFF;
+    text-decoration: none;
+}
+
+.active-link {
+    text-decoration: underline;
+}
+
+.nav-link-styles:hover,
+.nav-link-styles:focus {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+.social-link-header:hover,
+.social-link-header:focus {
+    opacity: 0.75;
+    
+}
+
 header div {
     display: flex;
     flex-direction: column;
@@ -81,6 +102,13 @@ header div {
     display: flex;
     justify-content: space-between;
     /* gap: 10px; */
+}
+
+.who-am-i-link:hover span {
+    display: none;
+}
+.who-am-i-link:hover:before {
+    content: 'View LinkedIn Profile';
 }
 
 .connect-socials-container {
@@ -154,15 +182,16 @@ section {
 }
 
 .hero h1 {
-    font-size: 3rem; /*  48px */
+    font-size: 2rem; /*  48px */
 }
 
 .hero-icons {
-    font-size: 5rem; /*  80px */
+    font-size: 3rem; /*  80px */
+    margin-right: .25em;
 }
 
 .hero p {
-    font-size: 2rem; /*  32px */
+    font-size: 1.75rem; /*  32px */
 }
 
 .hero-emphasis-txt-ux{
@@ -181,7 +210,7 @@ section {
 }
 
 .project-img {
-    /* these are placeholders for now */
+    align-self: flex-start;
 }
 
 /* Comments are the UX Edu section equivalents */
@@ -344,6 +373,44 @@ section {
     color: #FFF;
     padding: 1em 1.5em; /* Updated ratio to better match style needs */
     /* width: 65%; */
+
+    
+}
+
+a.primary-btn {
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+   
+    
+    opacity: 0.75;
+    cursor: pointer;
+    text-decoration: underline;
+    
+    .hover-icon-state {
+        display: inline;
+        text-decoration: none;
+    }
+    
+}
+
+.disabled-btn {
+    background-color: rgba(145,51,228,.5);
+}
+.disabled-btn:hover {
+    cursor:not-allowed;
+    text-decoration: none;
+    opacity: 1.0;
+}
+
+.hover-icon-state {
+    display: none;
+    margin-left: .5em;
+    text-decoration: none;
 }
 
 .design-code-section {
@@ -376,6 +443,15 @@ section {
    
     /* for icon shenans */
     position: relative;
+}
+
+.card:hover,
+.card:focus {
+    opacity: 0.75;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
 }
 
 .dribbble-shot-img {
