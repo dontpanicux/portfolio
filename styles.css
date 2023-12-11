@@ -537,6 +537,30 @@ footer {
     font-size: 4rem;
 }
 
+.social-circle-link a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-circle-link:hover,
+.social-circle-link:focus  {
+    background: rgb(102,99,105);
+    background: -moz-linear-gradient(90deg, rgba(102,99,105,1) 0%, rgba(0,0,0,1) 100%, rgba(234,217,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(102,99,105,1) 0%, rgba(0,0,0,1) 100%, rgba(234,217,255,1) 100%);
+    background: linear-gradient(90deg, rgba(102,99,105,1) 0%, rgba(0,0,0,1) 100%, rgba(234,217,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#666369",endColorstr="#ead9ff",GradientType=1);
+    cursor: pointer;
+}
+.social-circle-link:hover a,
+.social-circle-link:focus a  {
+    color: #ffe600;
+}
+.social-circle-link:hover svg path,
+.social-circle-link:focus svg path  {
+    fill: #ffe600;
+}
+
+
 .footer-social-links-container {
     display: flex;
     flex-wrap: wrap;
